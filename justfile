@@ -9,7 +9,7 @@ alias f := fmt
     just -l
 
 test:
-    uv run pytest
+    uv run pytest -s
 
 build: clean
     uv run python -m build

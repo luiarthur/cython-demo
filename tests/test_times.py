@@ -9,15 +9,16 @@ def run_and_time(name: str, f, *args, **kwargs):
     result = f(*args, **kwargs)
     toc = perf_counter()
     wall = toc - tic
-    msg = f"{name}: Computed {out} in {toc-tic} seconds."
+    msg = f"{name}: Computed {result} in {toc-tic} seconds."
     return dict(result=result, wall=wall, msg=msg)
 
 
-if __name__ == "__main__":
+def test_times():
     n = 1_000_000
     info_slow = run_and_time("add_numbers", add_numbers, n)
     info_fast = run_and_time("add_numbers_fast", add_numbers_fast, n)
     assert info_slow["result"] == info_fast["result"]
-    assert info_slow["wall"] * 10 < info_fast["wall"]
+    assert info_fast["wall"] * 10 < info_slow["wall"]
+    print()
     print(info_slow["msg"])
     print(info_fast["msg"])
