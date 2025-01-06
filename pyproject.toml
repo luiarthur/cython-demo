@@ -12,9 +12,6 @@ dependencies = [
     "cython>=3.0.11",
 ]
 
-[project.scripts]
-cython-demo = "cython_demos:main"
-
 [build-system]
 requires = ["setuptools>=74.1", "Cython"]
 build-backend = "setuptools.build_meta"
