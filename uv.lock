@@ -237,7 +237,7 @@ wheels = [
 ]
 
 [[package]]
-name = "cython-tests"
+name = "cython-demo"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
