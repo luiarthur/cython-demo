@@ -11,7 +11,7 @@ pip install git+ssh://git@github.com/luiarthur/cython-demo.git
 
 **uv**
 ```
-uv add git+ssh://git@github.com/luiarthur/cython-demo.git
+uv add git+https://github.com/luiarthur/cython-demo.git
 ```
 
 ## Run benchmarks
