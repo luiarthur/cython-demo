@@ -15,7 +15,7 @@ dependencies = [
 cython-demo = "cython_demos:main"
 
 [build-system]
-requires = ["setuptools>=74.1", "wheel", "Cython"]
+requires = ["setuptools>=74.1", "Cython"]
 build-backend = "setuptools.build_meta"
 
 [dependency-groups]
