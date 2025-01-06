@@ -32,5 +32,5 @@ lint.extend-unsafe-fixes = ["F401"]
 
 [tool.setuptools]
 ext-modules = [
-    {name="fast", sources=["src/cython_demo/functions.py"]}
+    {name="cython_demo.fast", sources=["src/cython_demo/functions.py"]}
 ]

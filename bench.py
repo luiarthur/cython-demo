@@ -1,7 +1,7 @@
 from time import perf_counter
 
 from cython_demo.functions import add_numbers
-from fast import add_numbers as add_numbers_fast
+from cython_demo.fast import add_numbers as add_numbers_fast
 
 
 def run_and_time(name: str, f, *args, **kwargs):
