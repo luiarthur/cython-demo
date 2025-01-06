@@ -26,3 +26,7 @@ clean:
 fmt:
     ruff format
     just --fmt --unstable
+
+# Rebuild and reinstall compiled cython modules. 
+reinstall:
+    uv run --reinstall-package={{ name }} -- echo
