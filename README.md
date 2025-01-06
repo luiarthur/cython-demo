@@ -6,7 +6,7 @@ Demo of using cython in a package.
 
 **pip**
 ```
-pip install git+ssh://git@github.com/luiarthur/cython-demo.git
+pip install git+https://github.com/luiarthur/cython-demo.git
 ```
 
 **uv**
