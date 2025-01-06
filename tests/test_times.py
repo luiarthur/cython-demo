@@ -1,6 +1,6 @@
 from time import perf_counter
 
-from cython_demo.functions import add_numbers
+from cython_demo.slow import add_numbers
 from cython_demo.fast import add_numbers as add_numbers_fast
 
 
