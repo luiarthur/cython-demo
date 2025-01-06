@@ -15,7 +15,7 @@ dependencies = [
 cython-tests = "cython_tests:main"
 
 [build-system]
-requires = ["setuptools>=74.1", "cython"]
+requires = ["setuptools>=74.1", "wheel", "Cython"]
 build-backend = "setuptools.build_meta"
 
 [dependency-groups]
@@ -32,5 +32,5 @@ lint.extend-unsafe-fixes = ["F401"]
 
 [tool.setuptools]
 ext-modules = [
-    {name="wow", sources=["src/cython_tests/wow.py"]}
+    {name="compiled_stuff", sources=["src/cython_tests/wow.py"]}
 ]
