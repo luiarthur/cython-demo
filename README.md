@@ -41,8 +41,8 @@ info_slow = run_and_time("add_numbers", add_numbers, n)
 info_fast = run_and_time("add_numbers_fast", add_numbers_fast, n)
 
 print(info_slow['msg'])
-> add_numbers: Computed 312499625000.0 in 0.07007383409328759 seconds.
+#> add_numbers: Computed 312499625000.0 in 0.07007383409328759 seconds.
 
 print(info_fast['msg'])
-> add_numbers_fast: Computed 312499625000.0 in 0.0016072089783847332 seconds.
+#> add_numbers_fast: Computed 312499625000.0 in 0.0016072089783847332 seconds.
 ```
